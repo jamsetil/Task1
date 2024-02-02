@@ -72,9 +72,7 @@ public class Task2Lesson3 {
           if(strings[i].contains(String.valueOf(secondVal))){
               System.out.println(strings[i]);
               break;
-          }else {
-              System.out.println("all chars has same occurance");
-              break;}
+          }
       }
 
 
