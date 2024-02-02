@@ -8,7 +8,7 @@ public class Task2Lesson3 {
 //int[] str = {1,2,3,4,55,6,7,8,9,1};
 //        task10(str,1);
 
-        task3("asssddxxxx");
+        task3("abcbcdad");
     }
 
 
@@ -38,7 +38,7 @@ public class Task2Lesson3 {
     private static void task3(String strd) {//successes
 
         char [] chars = strd.toCharArray(); //[S,U,C,C,E,S,S,E,S]
-        String temp="";
+
         int[] ints= new int[strd.length()]; //[4,1,2,2,4,4,2,4]
         String [] strings = new String[strd.length()];
         int count=0;
@@ -78,7 +78,9 @@ public class Task2Lesson3 {
           if(strings[i].contains(String.valueOf(secondVal))){
               System.out.println(strings[i]);
               break;
-          }
+          }else {
+              System.out.println("all chars has same occurance");
+              break;}
       }
 
 
