@@ -3,6 +3,8 @@ package org.abbtech.task2;
 public class Task2Lesson3 {
     public static void main(String[] args) {
 
+        task3("aaaasdddd");
+
     }
 
 
@@ -72,9 +74,7 @@ public class Task2Lesson3 {
           if(strings[i].contains(String.valueOf(secondVal))){
               System.out.println(strings[i]);
               break;
-          }else {
-              System.out.println("all chars has same occurance");
-              break;}
+          }
       }
 
 

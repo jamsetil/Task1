@@ -1,2 +1,14 @@
-package org.abbtech.Lesson4;public class Person {
+package org.abbtech.Lesson4;
+
+public class Person {
+    String name;
+    int age;
+    Person(String name,int age){
+        this.name=name;
+        this.age=age;
+    }
+
+    void print(){
+        System.out.println("name : "+name+" age : "+age);
+    }
 }
