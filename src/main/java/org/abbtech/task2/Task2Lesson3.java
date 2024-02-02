@@ -2,13 +2,7 @@ package org.abbtech.task2;
 
 public class Task2Lesson3 {
     public static void main(String[] args) {
-        //     task1();
-        //        task2("salam baki salam ","alam","c");
-//
-//int[] str = {1,2,3,4,55,6,7,8,9,1};
-//        task10(str,1);
-
-        task3("asssddxxxx");
+      
     }
 
 
