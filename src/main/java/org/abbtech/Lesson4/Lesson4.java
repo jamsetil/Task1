@@ -8,6 +8,33 @@ public class Lesson4 {
 
         Person person = new Person("Ilyas",24);
         person.print();
+
+        System.out.println(isValid("()[]{}"));
+    }
+
+
+    static public boolean isValid(String s) {
+        char currentChar=' ';
+        char secondChar= ' ';
+
+
+        for(int i =0;i<=s.length()/2;i=i+2){
+            currentChar = s.charAt(i);
+            secondChar =s.charAt(i+1);
+            if (currentChar=='('){
+                if(currentChar!=--secondChar){
+                    return false;
+                }
+            }else
+                if (currentChar!=secondChar-2){
+                return false;
+            }
+
+
+
+        }
+        return true;
+
     }
 
 }

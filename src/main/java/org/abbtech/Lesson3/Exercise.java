@@ -1,7 +1,4 @@
-package org.abbtech.lesson3;
-
-import java.util.Arrays;
-import java.util.Scanner;
+package org.abbtech.Lesson3;
 
 public class Exercise {
 

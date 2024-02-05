@@ -1,4 +1,4 @@
-package org.abbtech.task1;
+package org.abbtech.Task1;
 
 import java.util.Scanner;
 

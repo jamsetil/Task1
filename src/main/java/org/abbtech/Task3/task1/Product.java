@@ -1,4 +1,4 @@
-package org.abbtech.task3;
+package org.abbtech.Task3.task1;
 
 public class Product {
     static String companyName;

@@ -1,4 +1,4 @@
-package org.abbtech.task1;
+package org.abbtech.Task1;
 
 public class task10 {
     public static void main(String[] args) {
