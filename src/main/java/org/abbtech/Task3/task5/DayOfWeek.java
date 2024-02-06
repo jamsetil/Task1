@@ -17,6 +17,7 @@ package org.abbtech.Task3.task5;
 class DayChecker{
     public static void main(String[] args) {
         DayOfWeek dayOfWeek = DayOfWeek.SATURDAY;
+        System.out.println(dayOfWeek);
         System.out.println(dayOfWeek.isWeekend(dayOfWeek));
     }
 }
