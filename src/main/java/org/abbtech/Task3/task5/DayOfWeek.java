@@ -2,18 +2,6 @@ package org.abbtech.Task3.task5;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 class DayChecker{
     public static void main(String[] args) {
         DayOfWeek dayOfWeek = DayOfWeek.SATURDAY;
