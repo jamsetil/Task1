@@ -32,6 +32,18 @@ public class GenericStorage<T extends Person> {
         System.out.println("Person named "+name+" added to the system");
     };
 
+    void addItem(T person){
+        if (item[item.length-1]!=null){
+
+            T[] newItem = (T[]) new Person[item.length*2];
+            System.arraycopy(item,0,newItem,0,item.length);
+            item=newItem;
+        }
+
+        item[arrayIndex++]= person;
+        System.out.println("Person named "+person.getName()+" added to the system");
+    }
+
 
     void removeItem(int id){
        for (int i = 0;i<item.length;i++){

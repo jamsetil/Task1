@@ -4,6 +4,10 @@ public class Main {
     public static void main(String[] args) {
     GenericStorage<Person> genericStorage = new GenericStorage<>();
 
+    Teacher teacher = new Teacher("asim",22);
+    Student student = new Student("fikret",32);
+    genericStorage.addItem(teacher);
+    genericStorage.addItem(student);
         //Needed methods
         genericStorage.addItem("Ilyas",24,false);
         genericStorage.addItem("Faiq",26,true);
@@ -14,10 +18,10 @@ public class Main {
         genericStorage.displayAllItems();
         genericStorage.removeItem(3);
         genericStorage.searchItem("Rasim");
-
-        //additional methods
-        genericStorage.displayRolesOfAllItems();
-        genericStorage.FindItemByIdAndUpdate(7,"Samir",22);
+//
+//        //additional methods
+//        genericStorage.displayRolesOfAllItems();
+//        genericStorage.FindItemByIdAndUpdate(7,"Samir",22);
 
 
     }
