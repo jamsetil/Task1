@@ -49,17 +49,17 @@ public class Main {
 
 
 //          removing employees whose exp is lesser than 2
-//        for (int i =0; i<employeeList.size();i++){
-//            if (employeeList.get(i).getExperience()<=2){
-//                employeeList.remove(i);
-//            }
-//        }
+        for (int i =0; i<employeeList.size();i++){
+            if (employeeList.get(i).getExperience()<2){
+                employeeList.remove(i);
+            }
+        }
 
         for (Employee e: employeeList
              ) {
-            if (e.getExperience()>2){
+
                 System.out.println("Employee with more than 2 y.o of exp: "+ e.getName());
-            }
+
 
         }
         System.out.println();
