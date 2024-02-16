@@ -18,6 +18,7 @@ public class Main {
         genericStorage.displayAllItems();
         genericStorage.removeItem(3);
         genericStorage.searchItem("Rasim");
+        genericStorage.displayAllItems();
 //
 //        //additional methods
 //        genericStorage.displayRolesOfAllItems();
