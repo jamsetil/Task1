@@ -37,15 +37,15 @@ public class Main {
         employeeList.add(fullTimeEmployee4);
 
 
-        //2 ILDEN CHOX OLANLAR YENI LISTE YIGHILA BILER
+        /*2 ILDEN CHOX OLANLAR YENI LISTE YIGHILA BILER
        // List<Employee> twoYearsOfexpEmployeeList = new ArrayList<>();
 
-//        for (Employee e: employeeList
-//             ) {
-//            if (e.getExperience()>2){
-//                twoYearsOfexpEmployeeList.add(e);
-//            }
-//        }
+        for (Employee e: employeeList
+             ) {
+            if (e.getExperience()>2){
+                twoYearsOfexpEmployeeList.add(e);
+          }
+      }*/
 
 
 //          removing employees whose exp is lesser than 2
