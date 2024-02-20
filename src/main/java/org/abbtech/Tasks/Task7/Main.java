@@ -23,6 +23,7 @@ public class Main {
         System.out.println("Press 3 to find book by title/author/genre/publication year");
         System.out.println("Press 4 to display books by publication year with ascending order");
         System.out.println("Press 5 to see number of books");
+        System.out.println("Press 6 to see average year of books");
         System.out.println("Press 0 to exit program");
         Scanner scanner = new Scanner(System.in);
        while (scanner.hasNext()){
@@ -88,6 +89,9 @@ public class Main {
                    break;
                case "5":
                    library.numberOfBooks();
+                   break;
+               case "6":
+                   library.averageYearOfAllBooks();
                    break;
                case "0":
                    scanner.close();
