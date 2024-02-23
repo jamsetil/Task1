@@ -1,4 +1,4 @@
-package org.abbtech.Tasks.Task8.AbstractFactoryPattern;
+package org.abbtech.Tasks.Task8.AbstractFactoryPatterns.Version1;
 
 public class Circle implements Shape{
     @Override
