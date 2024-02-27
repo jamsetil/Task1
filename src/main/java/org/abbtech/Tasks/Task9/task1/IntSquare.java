@@ -19,6 +19,7 @@ public class IntSquare {
         }
     scanner.nextLine();
        System.out.println("square value of entered number is: "+ (a*a));
+       return;
     }}
 
 }
