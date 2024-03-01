@@ -30,7 +30,7 @@ public class InventoryManager {
     };
     public void addInventoryItem(InventoryItem item) throws InvalidDataException {
         if (item==null)
-            throw new InvalidDataException();
+            throw new InvalidDataException("Invalid data");
         inventoryItems.add(item);
     }
     public void searchInventoryItemById(int id) throws ItemNotFoundException {
@@ -39,7 +39,7 @@ public class InventoryManager {
                .stream()
                .filter(inventoryItem -> inventoryItem.getId()==id)
                .findFirst();
-        InventoryItem inventoryItem = optionalInventoryItem.orElseThrow(()->new ItemNotFoundException());
+        InventoryItem inventoryItem = optionalInventoryItem.orElseThrow(()->new ItemNotFoundException("couldnt find item"));
         System.out.println("Item found with id: "+optionalInventoryItem.get().getId()+" item name "+optionalInventoryItem.get().getName());
 
     }
@@ -51,7 +51,7 @@ public class InventoryManager {
                 i.setName(name);
                 i.setPrice(price);
                 i.setQuantity(quantity);
-            }else throw new ItemNotFoundException();
+            }else throw new ItemNotFoundException("Couldnt find item to update");
         }
 //       Optional<InventoryItem> optionalInventoryItem= inventoryItems
 //               .stream()
@@ -66,7 +66,7 @@ public class InventoryManager {
     }
     public void deleteInventoryItemById(int id) throws InvalidDataException {
         if (!inventoryItems.stream().filter(inventoryItem -> inventoryItem.getId()==id).findAny().isPresent()){
-            throw new InvalidDataException();
+            throw new InvalidDataException("cannot find item");
         }
      inventoryItems.removeIf(inventoryItem -> inventoryItem.getId()==id);
         System.out.println("item deleted succesfully");
